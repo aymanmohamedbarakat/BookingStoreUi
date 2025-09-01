@@ -1,5 +1,5 @@
 import { Heart, ShoppingCart, Star } from "lucide-react";
-import coverBook from "../assets/images/cover.png";
+import coverBook from "../../../assets/images/cover.png";
 
 export default function BookItems() {
   return (
@@ -42,14 +42,14 @@ export default function BookItems() {
           </div>
           {/* Author year */}
           <div className="flex items-center justify-between">
-            <div className="grid grid-cols-2 gap-4 p-4">
+            <div className="grid grid-cols-3 gap-4">
               <div>
-                <h1>Author</h1>
-                <p>Robert T. Kiyosaki</p>
+                <h1 className="text-sm text-gray-400">Author</h1>
+                <p className="text-base">Robert T. Kiyosaki</p>
               </div>
               <div>
-                <h1>Year</h1>
-                <p>1997</p>
+                <h1 className="text-sm text-gray-400">Year</h1>
+                <p className="text-base">1997</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -57,7 +57,7 @@ export default function BookItems() {
                 <span>Add To Cart</span>
                 <ShoppingCart className="w-4 h-4" />
               </button>
-              <button className="text-pink-500 bg-white border  px-3 py-3 rounded-lg flex items-center space-x-2 transition-colors">
+              <button className="text-pink-500 bg-white border hover:bg-pink-500 hover:text-white  px-3 py-3 rounded-lg flex items-center space-x-2 transition-colors">
                 <Heart />
               </button>
             </div>
