@@ -133,7 +133,6 @@ export default function BookDetails() {
 
       {/* Tabs Section */}
       <div className="mt-12 pt-8">
-
         {/* Tab Navigation */}
         <div className="flex ">
           {['Product Details', 'Customer Reviews', 'Recomended For You'].map((tab) => (
@@ -192,49 +191,47 @@ export default function BookDetails() {
             </div>
           )}
 
-{activeTab === 'Customer Reviews' && (
-              <div>
-                <div className="grid grid-cols-2 gap-6">
-                  {/* Review 1 */}
-                  <div className="bg-white p-6 rounded-lg border border-gray-200">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                        <img 
-                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='20' fill='%23D1D5DB'/%3E%3Cpath d='M20 80 Q20 60 50 60 Q80 60 80 80 L20 80' fill='%23D1D5DB'/%3E%3C/svg%3E" 
-                          alt="John Smith"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-black">John Smith</h4>
-                        <span className="text-green-500 text-sm">Verified Purchase</span>
-                      </div>
+          {activeTab === 'Customer Reviews' && (
+            <div>
+              <div className="grid grid-cols-2 gap-6">
+                {/* Review 1 */}
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+                      <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='20' fill='%23D1D5DB'/%3E%3Cpath d='M20 80 Q20 60 50 60 Q80 60 80 80 L20 80' fill='%23D1D5DB'/%3E%3C/svg%3E"
+                        alt="John Smith"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    
-                    <p className="text-gray-500 text-sm mb-3">Reviewed On 28/07/2024</p>
-                    
-                    <div className="flex items-center gap-3 mb-3">
-                      <h5 className="text-black font-semibold">Excellent Book</h5>
-                      <div className="flex items-center gap-2">
-                        <span className="font-bold">5.0</span>
-                        <div className="flex">
-                          {[1, 2, 3, 4, 5].map((star) => (
-                            <Star key={star} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                          ))}
-                        </div>
-                      </div>
+                    <div>
+                      <h4 className="font-semibold text-black">John Smith</h4>
+                      <span className="text-green-500 text-sm">Verified Purchase</span>
                     </div>
-                    
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et 
-                      ultrices est. Aliquam in justo varius, sagittis neque ut,
-                    </p>
                   </div>
+
+                  <p className="text-gray-500 text-sm mb-3">Reviewed On 28/07/2024</p>
+
+                  <div className="flex items-center gap-3 mb-3">
+                    <h5 className="text-black font-semibold">Excellent Book</h5>
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold">5.0</span>
+                      <div className="flex">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <Star key={star} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
+                    ultrices est. Aliquam in justo varius, sagittis neque ut,
+                  </p>
                 </div>
               </div>
-            )}
-
-
+            </div>
+          )}
           {activeTab === 'Recomended For You' && (
             <div className="text-gray-600">
               <h3 className="font-semibold text-lg mb-4 text-black">Recommended Books</h3>

@@ -13,7 +13,6 @@ export default function BookShop() {
           {/* Sidebar */}
           <div className="w-full bg-white rounded-lg p-6 h-fit">
             <HeaderFilter />
-
             {/* Categories */}
             <CategoryFilter />
           </div>
