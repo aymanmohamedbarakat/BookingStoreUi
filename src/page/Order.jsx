@@ -6,7 +6,7 @@ export default function Order() {
             {/* Header with close button */}
             <div className="flex justify-end mb-6">
                 <button className="w-8 h-8 flex items-center justify-center text-pink-400 hover:bg-pink-50">
-                    <span className="text-sm"><Trash2Icon/></span>
+                    <span className="text-sm"><Trash2Icon /></span>
                 </button>
             </div>
 

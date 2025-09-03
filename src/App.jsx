@@ -9,10 +9,10 @@ export default function App() {
   return (
     <div>
       <Container>
-        {/* <BookShop />
-        <BookDetails /> */}
-        {/* <CartItems /> */}
-        {/* <Checkout /> */}
+        <BookShop />
+        <BookDetails /> 
+        <CartItems />
+        <Checkout />
         <Order />
       </Container>
     </div>
