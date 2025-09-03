@@ -3,6 +3,7 @@ import CartItems from "./components/BookStore/Cart/CartItems";
 import BookDetails from "./page/BookDetails";
 import BookShop from "./page/BookShop";
 import Checkout from "./page/Checkout";
+import Order from "./page/Order";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
         {/* <BookShop />
         <BookDetails /> */}
         {/* <CartItems /> */}
-        <Checkout />
+        {/* <Checkout /> */}
+        <Order />
       </Container>
     </div>
   );
