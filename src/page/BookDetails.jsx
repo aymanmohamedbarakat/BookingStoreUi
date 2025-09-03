@@ -4,10 +4,6 @@ import facebook from "../assets/images/facebook.png";
 import instagram from "../assets/images/instagram.png";
 import whatsapp from "../assets/images/whatsapp.png";
 import twitter from "../assets/images/twitter.png";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6";
 import { FiShare2 } from "react-icons/fi";
 import { BadgeCheck, Heart, Minus, Plus, ShoppingCart, Star, Truck } from 'lucide-react';
 export default function BookDetails() {
